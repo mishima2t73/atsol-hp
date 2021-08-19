@@ -15,22 +15,22 @@ Route::get('/', function () {
     return view('top');
 });
 //業務実績 i
-Route::get('atmarksol.jptest/business',function(){
+Route::get('/business',function(){
     return view('business');
 });
 //採用情報 m
-Route::get('atmarksol.jptest/recruit',function(){
+Route::get('/recruit',function(){
     return view('recruit');
 });
 //会社概要 i
-Route::get('atmarksol.jptest/company',function(){
+Route::get('/company',function(){
     return view('company');
 });
 //お問い合わせ m
-Route::get('atmarksol.jptest/contact',function(){
+Route::get('/contact',function(){
     return view('contact');
 });
 //news i
-Route::get('atmarksol.jptest/news',function(){
+Route::get('/news',function(){
     return view('news');
 });
