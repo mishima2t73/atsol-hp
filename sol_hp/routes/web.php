@@ -11,8 +11,8 @@
 |
 */
 //トップ m
-Route::get('atmarksol.jptest/', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('top');
 });
 //業務実績 i
 Route::get('atmarksol.jptest/business',function(){
