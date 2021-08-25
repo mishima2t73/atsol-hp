@@ -1,3 +1,7 @@
+let file = window.location.href.split('/').pop();
+
+
+
 const sliderImages = document.querySelectorAll('.image');
 const arrowRight = document.getElementById('arrow-right');
 const arrowLeft = document.getElementById('arrow-left');
@@ -32,3 +36,4 @@ arrowLeft.addEventListener('click',function(){
 })
 
 startSlide();
+
