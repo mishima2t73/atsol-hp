@@ -30,6 +30,11 @@ Route::get('/company',function(){
 Route::get('/contact',function(){
     return view('contact');
 })->name('contact');
+//お問い合わせ 送信後
+Route::get('/contact/confirm',function(){
+    return view('confirm');
+})->name('confirm');
+
 //news i
 Route::get('/news',function(){
     return view('news');

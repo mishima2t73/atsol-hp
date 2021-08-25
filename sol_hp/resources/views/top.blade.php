@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="jumbotron ">
+<div class="jumbotron">
    <div class="container">
       <div id = "images" class="slide">
          <div id = "arrow-left" class="arrow"></div>
@@ -41,5 +41,4 @@
 
    </div>
 </div>
-<script src="{{asset('js/temp.js')}}"></script>
 @endsection
