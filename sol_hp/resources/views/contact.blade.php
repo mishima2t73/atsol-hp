@@ -4,9 +4,11 @@
    
    <div class="container w-50">
     <h2 class="mt-3 mb-3">お問い合わせ</h2>
+
     <p> 当サイトおよびアットマーク・ソリューションへのお問い合わせは下記のフォームからお願い致します。</p>
-    <div class="err-msg-name alert alert-primary d-none"></div>
-        <form action=""  class="form-contact" >
+        <form action="{{route('confirm')}}"  method="post" class="form-contact" name="contact" >
+            @csrf
+            <div class="err-msg-name alert " id="err-msg-name"><p id="err-msg">会社名・ご氏名、住所、メールアドレスは必須項目です。</p></div>
             <div class="form-group">
                 <label for="">会社名・ご氏名 *必須</label>
                 <input type="text" class="validate required form-control" name="name">
@@ -29,9 +31,9 @@
             </div>
             <div class="form-group">
                 <label for="">お問い合わせ内容</label>
-                <textarea class="validate required form-control" name="title" row=5></textarea>
+                <textarea class="validate required form-control" name="content" row=5></textarea>
             </div>
-            <input type="submit"name="confirm" class="btn btn-secondary confirm" value="確認">
+            <input type="button" value="確認" onclick="clickBtn1(this.form)" class="btn btn-primary" />
         </form>
     </div>
     <script src="{{asset('js/contact.js')}}"></script>

@@ -2,14 +2,17 @@
 
 @section('content')
 
-<div class="jumbotron">
+<div class="jumbotron"style="">
    <div class="container">
       <div id = "images" class="slide">
          <div id = "arrow-left" class="arrow"></div>
          <div id = "arrow-right" class="arrow"></div>
-         
-      <div class="align-item-center image image1 " id = "image1"><img class="d-block mx-auto " style = "width:60%;"src="{{asset('img/top.jpg')}}" alt=""></div>
-      <div class="align-item-center image image2 " id = "image1"><img class="d-block mx-auto" style = "width:60%;"src="{{asset('img/top2.jpg')}}" alt=""></div>
+         <p class="head-text"><span class="h2">次世代形成</span><br>
+            幸せな社会創りに貢献するため絶えず革新し、次世代を造る<br>
+            知的生産社会に寄与する企業となる。
+         </p>
+      <div class="align-item-center image image1 " id = "image1"><img class="d-block mx-auto" src="{{asset('img/top2.jpg')}}" alt=""></div>
+      <div class="align-item-center image image2 " id = "image2"><img class="d-block mx-auto" src="{{asset('img/topd.jpg')}}" alt=""></div>
       </div>
    </div>
 </div>
@@ -38,7 +41,7 @@
          <a href=""><img class="d-block mx-auto" style = "width:180px;" src="{{asset('img/icon/dns_black_24dp.svg')}}" alt=""></a>
          <p class="text-center"> ネットワーク　サーバー構築</p>
       </div>
-
+<script src="js/temp.js"></script>
    </div>
 </div>
 @endsection

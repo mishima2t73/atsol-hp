@@ -31,7 +31,7 @@ Route::get('/contact',function(){
     return view('contact');
 })->name('contact');
 //お問い合わせ 送信後
-Route::get('/contact/confirm',function(){
+Route::post('/contact/confirm','HpController@confirm',function(){
     return view('confirm');
 })->name('confirm');
 
