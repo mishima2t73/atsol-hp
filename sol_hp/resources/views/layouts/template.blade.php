@@ -26,7 +26,7 @@
                 <a class="nav-link" href="{{route('company')}}">会社概要<span class="sr-only">(current)</span></a>
               </li>
             <li class="nav-item hover-a">
-            <a class="nav-link" href="{{route('news')}}">news<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{route('news_list')}}">news<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item hover-a">
             <a class="nav-link" href="{{route('recruit')}}">採用情報<span class="sr-only">(current)</span></a>
@@ -37,11 +37,24 @@
           </ul>
 
         </div>
-      </nav>
-
+    </nav>
+   
+<div class="hamburger hamshow" id="open_nav">
+  <span></span><span></span><span></span>
+</div>
+<div id="rnav" class="">
+  <ul class="list-group">
+    <li class="list-group-item border-top-0">事業案内</li>
+    <li class="list-group-item">会社概要</li>
+    <li class="list-group-item">news</li>
+    <li class="list-group-item">採用情報</li>
+    <li class="list-group-item border-bottom-0">お問い合わせ</li>
+  </ul>
+</div>
     @section('content')
 
-    @show
+    @show  
+
     <footer class="bg-white mt-5 shadow">
       <div>
         <div class="row m-2 pt-3">
@@ -75,7 +88,7 @@
       </div>
     </footer>
 </div>
-
+<script src="{{asset('js/main.js')}}"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    

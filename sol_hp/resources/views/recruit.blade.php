@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-    <div class="container" id="fade">
+    <div class="container main-fade" id="fade">
         <h2 class="heading mt-5" data-en="Recruit">採用情報</h2>
         <h4 class="mt-5 mb-3">アットマークソリューションでは、
             常に前向きな姿勢で取り組む人材を採用し、応援しています。

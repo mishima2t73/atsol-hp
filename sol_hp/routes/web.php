@@ -36,6 +36,30 @@ Route::post('/contact/confirm','HpController@confirm',function(){
 })->name('confirm');
 
 //news i
-Route::get('/news',function(){
-    return view('news');
+Route::get('/newslist',function(){
+    $url = public_path() . '/json/news.json';
+    $json = file_get_contents($url);
+    $json = mb_convert_encoding($json,'UTF8','ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+    $array = json_decode($json,true);
+    //$pick = $array[0]["title"];
+    $news = collect($array);
+    return view('news_list',compact("news"));
+})->name('news_list');
+
+Route::get('/news/{id}',function($id){
+    $url = public_path() . '/json/news.json';
+    $json = file_get_contents($url);
+    $json = mb_convert_encoding($json,'UTF8','ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+    $array = json_decode($json,true);
+    $news_list = collect($array);
+    
+    foreach($news_list as $news){
+        if ($news["id"] == $id){
+            $news["content"] = nl2br($news["content"]);
+            return  view('news',compact("news"));
+        }
+    }
+    dd($news);
+    $news= null;
+    return view('news',compact("news"));
 })->name('news');

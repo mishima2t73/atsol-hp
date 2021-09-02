@@ -1,3 +1,9 @@
+.html .body{
+    height: 100%;
+}
+.main-fade{
+    opacity:0;
+}
 .hover-a {
 	display: inline-block;
 	padding: 0.6em 2em;
@@ -19,7 +25,7 @@
 .arrow{
    cursor: pointer; 
    position: absolute;
-   margin-top: 200px;
+   margin-top: 14%;
    width: 0;
    height: 0;
    border-style:solid;
@@ -30,13 +36,13 @@
     border-width:20px 20px 20px 0;
     border-color:transparent gray transparent transparent;
     left: 0;
-    margin-left:30px;
+    margin-left:50px;
 }
 #arrow-right{
     border-width:20px 0 20px 20px;
     border-color:transparent transparent transparent gray;
     right: 0;
-    margin-right:30px;
+    margin-right:50px;
 }
 .images{
 position: relative;
@@ -106,3 +112,83 @@ position: relative;
 	font-style: italic;
 }
 
+.hamburger{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    align-self: center;
+    background: rgb(155, 218, 136);
+    cursor: pointer;
+    width: 50px;
+    height:40px;
+	border-radius: 5px;
+    z-index: 300;
+}
+.hamburger span{
+    display: inline-block;
+    transition: all.4s;
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius:5px;
+    background: #fff;
+    width: 45%;
+    
+}
+
+.hamburger span:nth-of-type(1){
+    top: 13px;
+}
+.hamburger span:nth-of-type(2){
+    top: 19px;
+}
+.hamburger span:nth-of-type(3){
+    top: 25px;
+}
+.hamburger.active span:nth-of-type(1) {
+    top: 12px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.hamburger.active span:nth-of-type(2) {
+	opacity: 0;/*真ん中の線は透過*/
+}
+
+.hamburger.active span:nth-of-type(3){
+    top: 24px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+.hamshow{
+    display: none;
+}
+#rnav{
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 289;
+    margin: 0;
+    background-color: rgb(183, 238, 217,0.5);
+}
+
+.list-group{
+    margin-top:80px;    
+}
+.list-group-item{
+    background: rgb(183, 238, 217,0.5);
+}
+.show{
+    transition: all 0.4s ease-in;
+    /*margin-left: 110vw;*/
+    transform: translate3d(-300px,0,0);
+}
+.hid{
+    transition: all 0.3s ease-in;
+    /*margin-left: 110vw;*/
+    transform: translate3d(300px,0,0);
+}
