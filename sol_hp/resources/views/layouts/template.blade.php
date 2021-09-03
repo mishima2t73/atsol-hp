@@ -39,7 +39,7 @@
         </div>
     </nav>
    
-<div class="hamburger hamshow" id="open_nav">
+<div class="hamburger " id="open_nav">
   <span></span><span></span><span></span>
 </div>
 <div id="rnav" class="">

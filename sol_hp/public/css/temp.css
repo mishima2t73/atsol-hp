@@ -114,7 +114,7 @@ position: relative;
 
 .hamburger{
     position: fixed;
-    top: 30px;
+    top: 120px;
     right: 30px;
     align-self: center;
     background: rgb(155, 218, 136);
@@ -177,7 +177,7 @@ position: relative;
 }
 
 .list-group{
-    margin-top:80px;    
+    margin-top:180px;    
 }
 .list-group-item{
     background: rgb(183, 238, 217,0.5);

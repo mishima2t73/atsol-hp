@@ -22,13 +22,3 @@ open_nav.addEventListener('click',function(){
     }
 }
 )
-
-$(window).scroll(function(){
-    var top = $("open_nav").offset().top;
-    var position = top - $(window).heigt(100);
-    if($(window).scrollTop()>position){
-        $ham.style.display= "";
-    }else{
-        $ham.style.display= "none";
-    }
-})
