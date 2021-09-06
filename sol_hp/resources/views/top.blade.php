@@ -7,7 +7,7 @@
          <div id = "images" class="slide">
             <div id = "arrow-left" class="arrow"></div>
             <div id = "arrow-right" class="arrow"></div>
-            <p class="head-text"><span class="h2">次世代形成</span><br>
+            <p class="head-text p-4"><span class="h2">次世代形成</span><br>
                幸せな社会創りに貢献するため絶えず革新し、次世代を造る<br>
                知的生産社会に寄与する企業となる。
             </p>
