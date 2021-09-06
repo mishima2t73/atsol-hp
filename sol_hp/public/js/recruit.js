@@ -1,13 +1,13 @@
-window.onload = function(){
+window.addEventListener('DOMContentLoaded', function () {
+//window.onload = function(){
     // page
     fadeIn("#fade", 80, ()=>{
         console.log("done");
+        });
     });
-    };
     function fadeIn(id,time,callback=null){
         const elem = document.querySelector(id)
         let i = 0.0;
-    
         const timerid = setInterval(()=>{
             //opacty
             elem.style.opacity = i
