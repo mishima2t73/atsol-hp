@@ -1,9 +1,11 @@
 @extends('layouts.template')
 
 @section('content')
-   <div id="company"class="bg-light">
+   <div id="company"class="bg-light container">
        <h1 class="text-center">company</h1>
        <h2 class="mx-auto">会社概要</h2>
+</div>
+<table width="660px" border="0" cellspacing="0" cellpadding="0">
        <tbody>
            <tr>
                <td width="190" valign="top"class="comCeiL">商号</td>
@@ -15,11 +17,12 @@
         "本社:"
         <br>
         "大阪府大阪市中央区安堂寺町2-1-10 ベルテ谷町2F(202)"
-        <br>
+</br>
         <br>
         "東京支社:"
         <br>
         "東京都文京区本郷3丁目9-11 平原ビル202号室"
+</td>
 </td>
 </tr>
 <tr>
@@ -57,8 +60,9 @@
             <a href="#topPosition">
                 <div class="pageTopbotton">ページトップ</div>
 </a>
+<script src="js/fade.js"></script>
 </div>
 </div>
 </tbody>
-
+</table>
 @endsection
