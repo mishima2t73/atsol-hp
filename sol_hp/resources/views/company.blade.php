@@ -2,8 +2,7 @@
 
 @section('content')
    <div id="company"class="bg-light container">
-       <h1 class="text-center">company</h1>
-       <h2 class="mx-auto">会社概要</h2>
+       <h2 class="heading mt-5 mb-5" data-en="company">会社概要</h2>
        <table>
        <tbody>
            <tr>
