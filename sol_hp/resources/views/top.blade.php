@@ -18,11 +18,9 @@
    </div>
 
    <div id="news" class="bg-light">
-      <h2 class="mb-1 ml-3 mt-3">NEWS </h2>
+      <h2 class="mb-1 ml-3 mt-3">NEWS</h2>
       <ul class="list-group-flush ">
-         <li class="list-group-item bg-light"><span class=" pr-2 border-right">タイトル</span> サンプル</li>
-         <li class="list-group-item bg-light"><span class=" pr-2 border-right">タイトル</span> サンプル</li>
-         <li class="list-group-item bg-light"><span class=" pr-2 border-right">タイトル</span> サンプル</li>
+         <li class="list-group-item bg-white"><span class=" pr-2 border-right"><a href="{{route("news",['id'=>$pick["id"]])}}" class="">{{$pick["title"]}}</a></span></li>
       </ul>
    </div>
    <div class="container bg-white border">
