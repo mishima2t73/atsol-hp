@@ -3,11 +3,12 @@
 @section('content')
 
 <div id="business" class="bg-light container">
-   <h2 class="mx-auto">業務実績 </h2>
+   <h2 class="heading mt-5 mb-5" data-en="business">業務実績 </h2>
    <div class="contWS">
        <div class="recon">
            <div class="recon">開発導入実績</div>
            <div class="reco">一部を抜粋しております</div>
+</div>
 </div>
 <div class="TL">
  <div class="achievements">広告閲覧アプリ</div>
@@ -113,7 +114,6 @@
     <td class="OSystemR">Linux</td>
 </tr>
 </tbody>
-</tbody>
 <div class="TL">
 <div class="achivements">映像配信システム</div>
 </div>
@@ -130,7 +130,6 @@
     <td class="OSystemL">OS</td>
     <td class="OSystemR">Windows</td>
 </tr>
-</tbody>
 </tbody>
 <div class="TL">
 <div class="achivements">入退室管理システム</div>
@@ -215,7 +214,7 @@
         ReadHatLinux Solaris ATX HP-UX FreeBSD</div>
     <div class="infrN">NetWork</div>
     <div class="infrS">Cisco PixFireWall Catalist NetScreen</div>
-    <script src="js/fade.js"></script>
+    <script src="{{asset('js/recruit.js')}}"></script>
 </div>
 </div>
 @endsection

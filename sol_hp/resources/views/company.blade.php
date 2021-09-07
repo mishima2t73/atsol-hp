@@ -56,6 +56,7 @@
     <div class="pageTop">
         <div class="pageTopbotton">
             <a href="#topPosition">
+            <script src="{{asset('js/recruit.js')}}"></script>
                 <div class="pageTopbotton">ページトップ</div>
 </a>
 </div>
