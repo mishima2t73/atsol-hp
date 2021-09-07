@@ -12,7 +12,15 @@
 */
 //トップ m
 Route::get('/', function () {
-    return view('top');
+    $url = public_path() . '/json/news.json';
+    $json = file_get_contents($url);
+    $json = mb_convert_encoding($json,'UTF8','ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+    $array = json_decode($json,true);
+    $pick = [];
+    $pick = $pick +$array[0];
+    //dd($pick);
+    
+    return view('top',compact("pick"));
 })->name('top') ;
 //業務実績 i
 Route::get('/business',function(){
