@@ -3,7 +3,7 @@
 @section('content')
    
    <div class="container w-50">
-    <h2 class="mt-3 mb-3">お問い合わせ</h2>
+    <h2 class="heading mt-5 mb-5" data-en="contact">お問い合わせ</h2>
 
     <p> 当サイトおよびアットマーク・ソリューションへのお問い合わせは下記のフォームからお願い致します。</p>
         <form action="{{route('confirm')}}"  method="post" class="form-contact" name="contact" >
